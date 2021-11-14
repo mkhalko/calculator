@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-const Input = () => {
+const Input = (props) => {
   const [value, setValue] = useState(null);
   const handleChange = function (event) {
+    props.onChange(event.target.value);
     setValue(event.target.value);
   };
-  console.log(value)
+  console.log(props);
 
   return (
     <div>
