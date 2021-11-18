@@ -13,7 +13,7 @@ const Main = () => {
       <Input onChange={setInput1}></Input>
       <Calculate inputfirst={input1} inputsecond={input2} kacsa={setResult}></Calculate>
       <Input onChange={setInput2}></Input>
-      <Result></Result>
+      <Result input={result} ></Result>
       <Delete></Delete>
     </div>
   );
